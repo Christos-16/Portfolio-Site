@@ -215,7 +215,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    float: left;
+    /*float: left;*/
     list-style: none;
     padding: 0 16px;
 }
@@ -273,5 +273,63 @@ header .header-cases {
     margin: 16px 16px 0;
     width: calc(100% -32px);
     height: 100px;
-    background-color: #f2f2f2;
+    background-color: grey;
+}
+
+p {
+    color: #111;
+}
+
+.index-links div h3 {
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*footer*/
+
+footer {
+    width: calc( 100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.footer-links-cases {
+    display: none;
+}
+
+.footer-sm {
+    width: 50px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 60px;
+    float: right;
+    margin-bottom: 10px;
 }
