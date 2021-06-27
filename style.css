@@ -386,6 +386,7 @@ Twitter: @rich_clark
         }
         
         .case-vid video {
+            width: 450px;
             display: block;
             margin: 0 auto;
             padding: 30px 0;
@@ -402,13 +403,13 @@ Twitter: @rich_clark
         
         .case-vid article div p {
             font-family: Catamaran;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 15px;
+            font-weight: 60;
             line-height: 24px;
             color: #111;
             text-transform: uppercase;
             column-count: 4;
-            column-gap: 20px;
+            column-gap: 80px;
         }
         /*case*/
         
@@ -463,6 +464,19 @@ Twitter: @rich_clark
         }
         
         @media only screen and (min-width: 1000px) {
+            .case-vid article div p {
+                font-family: Catamaran;
+                font-size: 15px;
+                font-weight: 60;
+                line-height: 24px;
+                color: #111;
+                text-transform: uppercase;
+                column-count: 4;
+                column-gap: 25px;
+            }
+            .case-vid video {
+                width: 750px;
+            }
             .footer-links-cases {
                 display: block;
             }
@@ -477,3 +491,44 @@ Twitter: @rich_clark
                 text-transform: uppercase;
             }
         }
+        
+        form {
+            width: 300px;
+        }
+        
+        input {
+            width: 100%;
+        }
+        
+        textarea {
+            resize: vertical;
+            max-height: 100px;
+        }
+        
+        input,
+        textarea {
+            outline: none;
+            border: 1px solid #ddd;
+        }
+        
+        input:focus,
+        textarea:focus {
+            box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+            border: 1px solid rgb(255, 0, 0);
+        }
+        
+         ::placeholder {
+            color: red;
+            opacity: 1;
+        }
+        
+         :-ms-input-placeholder {
+            color: red;
+        }
+        
+         ::-ms-input-placeholder {
+            color: red;
+            opacity: 1;
+        }
+        
+        .case-vid {}
