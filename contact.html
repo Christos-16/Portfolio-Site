@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/70f347caea.js" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -26,15 +28,42 @@
 
     </header>
     <main>
-        <p>Sent Email</p>
-        <form class="contact-form" action="contactform.php" method="post">
-            <input type="type" name="name" placeholder="Full name">
-            <input type="type" name="email" placeholder="Your email">
-            <input type="type" name="subject" placeholder="Subject"> Male: <input type="radio" name="gender" value="Male"> Female: <input type="radio" name="gender" value="Female"> Other: <input type="radio" name="gender" value="Other">
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit" name="submit">Send mail</button>
-
-        </form>
+        <section id="contact" class="bg-light">
+            <div class="container">
+                <h2>Get Your <span class="text-primary">Website</span> Now</h2>
+                <div class="form-container">
+                    <div class="mail-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="form-box">
+                        <h3>Shoot me a <span class="text-primary"> Message</span></h3>
+                        <form action="POST" data-netlify="true">
+                            <div class="form-group">
+                                <label for="first-name">First-name</label>
+                                <input type="text" placeholder="Enter your first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last-name</label>
+                                <input type="text" placeholder="Enter your last name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="Message">Message</label>
+                                <textarea rows="7" placeholder="Enter your Message"></textarea>
+                            </div>
+                            <div class="field">
+                                <input type="file" name="myfile" id="myfile" placeholder="Upload File" rows="7">
+                            </div>
+                            <div class="field">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+                            <input type="submit" value="Send Message" class="contact-btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
